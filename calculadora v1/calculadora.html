@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora v1</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <header>
+       <h1>Calculadora de Números</h1>
+    </header>
+
+    <section>
+        <h1>Digite seus números:</h1>
+        <p>Número 1:<input type="number" id="num" name="num"></p>
+        
+        <p>Número 2:<input type="number" id="num2" name="num2"></p>
+        
+
+        <h1>Escolha sua Opção:</h1>
+        <p>
+        <input type="radio" id="op" name="op" checked> 
+         <label for="soma">Soma</label>   
+
+        <input type="radio" id="op" name="op">
+        <label for="sub">Subtração</label>
+
+        <input type="radio" id="op" name="op">
+        <label for="sub">Multiplicação</label>   
+
+        <input type="radio" id="op" name="op">
+        <label for="sub">Potenciação</label> 
+        <p>
+            <input type="button" id="botao" value="Fazer" onclick="numeros()">
+        </p>
+        
+        </p>
+        
+        <div id="res">
+            <h2>Resultado :</h2>
+        </div>
+    </section>
+
+
+</body>
+    <script src="calculadora.js"></script>
+</html>

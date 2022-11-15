@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        div#res{
+            margin-top: 20px;
+            background-color: white;
+            
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Descobrindo Nacionalidades</h1>
+    Qual país você mora? = <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="pais1()">
+    <div id="res">
+
+    </div>
+
+    <script>
+         
+       function pais1(){ 
+
+       var país= window.document.querySelector('input#txtp')
+       var res = window.document.querySelector('div#res')
+       var texton1 = país.value
+
+      if((texton1 == "Brasil")||(texton1 == 'brasil')){
+        res.innerHTML += `Você é Brasileiro pois vem do ${texton1}`
+       }
+       else{
+        res.innerHTML += `Você é estrangeiro pois vem do ${texton1}`
+       }
+    }
+    </script>
+    
+</body>
+</html>
